@@ -2,11 +2,22 @@
 
 export const defaultTheme = {
   colors: {
-    'primary': '#FFA404',
-    'base-title': '#e7edf4',
-    'sub': '#B3DEE5',
-    'dark': '#31525B',
-    'base-text': '#afc2d4',
+    'primary': '#E11383',
+    'primary-light': '#FF3BA5',
+    'primary-dark': '#BA0668',
+    'secondary': '#8C3BFF',
+    'secondary-light': '#A566FF',
+    'secondary-dark': '#6526BF',
+    'black-300': '#3C3E40',
+    'black-500': '#252627',
+    'black-700': '#0C0D0D',
+    'white-300': '#DADFEB',
+    'white-500': '#F7FAFF',
+    'white-700': '#FDFDFD',
+    'success': '#62C83E',
+    'error': '#C83E3E',
+    'warning': '#EFD444',
+    'info': '#3EA7C8',
     'base-background': '#FAE6B1',
     'base-input': '#040f1a',
   },
@@ -21,7 +32,7 @@ export const defaultTheme = {
   },
 
   fonts: {
-    reg: 'Nunito',
+    reg: 'Roboto',
   },
 };
 
