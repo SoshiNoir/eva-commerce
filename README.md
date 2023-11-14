@@ -1,27 +1,48 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#-layout">Layout</a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Projeto  ❣️ Eva Commerce
 
-Currently, two official plugins are available:
+<p align="center">
+ <img src="https://th.bing.com/th/id/OIP.rSMyHuZxg79cnKygw6RucAHaE8?pid=ImgDet&rs=1" alt="Prévia do projeto" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Projeto
 
-## Expanding the ESLint configuration
+"Eva Commerce" é um projeto teste, uma aplicação que simula um e-commerce e foi desenvolvido com o objetivo de praticar alguns conceitos bem importantes do React.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<p>Link do deploy projeto desenvolvido: [TBA]/</p>
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Tecnologias
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+<table align="center">
+    <tr>
+        <th> Web </th>
+      <th> React </th>
+    </tr>
+    <tr>
+        <td>
+            React <br/>
+            TypeScript <br/>
+            JavaScript <br/>
+            ViteJs <br/>
+       </td>
+      <td>
+        Estado <br/>
+        Imutabilidade do estado <br/>
+        Listas e chaves no ReactJS <br/>
+        Props<br/>
+        Componentização </br>
+      </td>
+    </tr>
+</table>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/FD5HIprGv4DfQuaUBpt6zi/Eva-Commerce-Teste?node-id=2%3A167). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+<br/><br/>
+---
