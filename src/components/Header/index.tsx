@@ -1,15 +1,27 @@
+
 import { NavLink } from "react-router-dom";
 import Logo from '../../assets/logo.png';
+import Search from '../../assets/search.svg';
+import DropdownMenu from "./Dropdown";
 import { HeaderContainer } from './styles';
 
 export function Header() {
+  const categories = ['Livros', 'Escritório', 'Vestuário', 'Informática'];
+
   return (
     <HeaderContainer>
       <nav>
         <NavLink to='/' title='Eva Commerce'>
           <img src={Logo} />
         </NavLink>
-        <input type="text" />
+        <div className="category-and-search">
+          <DropdownMenu title="Categorias" options={categories} />
+          <div className="search-bar">
+            <input type="text" />
+            <button><img src={Search} alt="Pesquisar" /></button>
+          </div>
+        </div>
+
         <div className="customer-portal">
           <div className="account">
             <p>Minha Conta</p>
