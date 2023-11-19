@@ -4,7 +4,9 @@ import { Container } from "./styles";
 export function ProductSection() {
   return (
     <Container>
-      <h1 className="title">Destaques</h1>
+      <div className="title-container">
+        <h1 className="title">Destaques</h1>
+      </div>
       <ProductSlider />
     </Container>
   )
