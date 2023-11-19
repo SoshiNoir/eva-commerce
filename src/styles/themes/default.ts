@@ -23,6 +23,7 @@ export const defaultTheme = {
   },
 
   textSizes: {
+    xxxl: '2rem', // 32px
     xxl: '1.5rem', // 24px
     xl: '1.25rem', // 20px
     l: '1.125rem', // 18px

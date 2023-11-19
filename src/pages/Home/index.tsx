@@ -1,4 +1,5 @@
-import React from 'react';
+
+import { ProductSection } from './components/ProductSection';
 import { Container } from './styles';
 
 
@@ -6,7 +7,7 @@ import { Container } from './styles';
 export function Home() {
   return (
     <Container>
-      <h1>Hello World!</h1>
+      <ProductSection />
     </Container>
   )
 }
