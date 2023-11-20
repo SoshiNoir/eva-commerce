@@ -1,17 +1,16 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
+import 'swiper/css';
 import 'swiper/css/pagination';
+import { SwiperSlide } from 'swiper/react';
+import { Container, CustomSwiper } from './styles';
 
-import { Pagination } from "swiper/modules";
+import { Pagination } from 'swiper/modules';
 import BannerImage from '../../assets/banner.png';
-import { Container } from "./styles";
 
 export function Banner() {
   return (
     <>
-      <Container >
-        <Swiper
+      <Container>
+        <CustomSwiper
           pagination={{ clickable: true }}
           slidesPerView={1}
           speed={500}
@@ -22,7 +21,7 @@ export function Banner() {
           <SwiperSlide><img className="banner-image" src={BannerImage} alt="" /></SwiperSlide>
           <SwiperSlide><img className="banner-image" src={BannerImage} alt="" /></SwiperSlide>
           <SwiperSlide><img className="banner-image" src={BannerImage} alt="" /></SwiperSlide>
-        </Swiper>
+        </CustomSwiper>
       </Container>
     </>
   );

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: auto;
+  gap: 64px;
 
 .title {
   font-weight: bold;

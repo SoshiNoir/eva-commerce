@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 64px;
 
   div {
     border-radius: 4px;
@@ -40,7 +41,7 @@ export const Container = styled.div`
 
     p:first-child {
       text-align: end;
-      margin-right: 74px;
+      margin-right: 42px;
       text-decoration: line-through;
       color: ${props => props.theme.colors['black-300']};
       font-size: ${props => props.theme.textSizes['xs']};

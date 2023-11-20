@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Swiper } from 'swiper/react';
 
 export const Container = styled.div`
   width: 100%;
@@ -17,4 +18,18 @@ export const Container = styled.div`
     background: none;
     margin-top: -65px;
   }
-`
+`;
+
+export const CustomSwiper = styled(Swiper)`
+  .swiper-pagination {
+    bottom: 50px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: ${props => props.theme.colors['white-300']}
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: ${props => props.theme.colors['primary']}
+  }
+`;

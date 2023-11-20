@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { ProductCard } from "..";
 import NextArrow from '../../../assets/next-arrow.png';
 import PrevArrow from '../../../assets/prev-arrow.png';
-import { Container, NextContainer, PrevContainer } from "./styles";
+import { Container, FilteredSliderContainer } from "./styles";
 
 interface Product {
   id: number;
@@ -20,25 +20,34 @@ interface Product {
   rating: number;
 }
 
-export function ProductSlider() {
+interface ProductSliderProps {
+  category: string;
+}
+
+export function ProductSlider({ category }: ProductSliderProps) {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
+    fetch(`https://dummyjson.com/products/category/${category}`)
       .then((response) => response.json())
       .then((data) => setProducts(data.products));
-  }, []);
+  }, [category]);
+
+  const prevButtonSelector = `.prev-arrow-${category}`;
+  const nextButtonSelector = `.next-arrow-${category}`;
 
   return (
     <Container>
-      <PrevContainer className="prev-arrow"><button><img src={PrevArrow} alt="" /></button></PrevContainer>
+      <div className={`prev-arrow prev-arrow-${category}`}>
+        <button><img src={PrevArrow} alt="" /></button>
+      </div>
       <Swiper
         slidesPerView={4}
         speed={500}
         loop={true}
         navigation={{
-          prevEl: ".prev-arrow",
-          nextEl: ".next-arrow",
+          prevEl: prevButtonSelector,
+          nextEl: nextButtonSelector,
         }}
         modules={[Navigation]}
         spaceBetween={100}
@@ -50,7 +59,26 @@ export function ProductSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <NextContainer className="next-arrow"><button><img src={NextArrow} alt="" /></button></NextContainer>
+      <div className={`next-arrow next-arrow-${category}`}>
+        <button><img src={NextArrow} alt="" /></button>
+      </div>
     </Container>
+  );
+}
+
+export function FilteredSlider() {
+  const categories = ["smartphones", "laptops", "tops", "skincare"];
+
+  return (
+    <>
+      {categories.map((category) => (
+        <FilteredSliderContainer>
+          <div className="title-container">
+            <h1>{category}</h1>
+          </div>
+          <ProductSlider key={category} category={category} />
+        </FilteredSliderContainer>
+      ))}
+    </>
   );
 }

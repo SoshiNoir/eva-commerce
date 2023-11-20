@@ -6,7 +6,7 @@ import DropdownMenu from "./Dropdown";
 import { HeaderContainer } from './styles';
 
 export function Header() {
-  const categories = ['Livros', 'Escritório', 'Vestuário', 'Informática'];
+  const categories = ['Smartphones', 'Laptops', 'Tops', 'Skincare'];
 
   return (
     <HeaderContainer>
