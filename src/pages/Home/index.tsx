@@ -1,4 +1,3 @@
-
 import { ProductSection } from './components/ProductSection';
 import { Container } from './styles';
 
