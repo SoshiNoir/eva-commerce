@@ -50,7 +50,7 @@ export function ProductSlider({ category }: ProductSliderProps) {
           nextEl: nextButtonSelector,
         }}
         modules={[Navigation]}
-        spaceBetween={100}
+        spaceBetween={32}
         autoplay={true}
       >
         {products.map((product: Product) => (

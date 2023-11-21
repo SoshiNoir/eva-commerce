@@ -38,10 +38,13 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 16px;
 
-    p:first-child {
+    .price-off {
+      display: flex;
+      margin-right: 20%;
+      justify-content: end;
       text-align: end;
-      margin-right: 42px;
       text-decoration: line-through;
       color: ${props => props.theme.colors['black-300']};
       font-size: ${props => props.theme.textSizes['xs']};
@@ -51,5 +54,9 @@ export const Container = styled.div`
       font-weight: 800;
       font-size: ${props => props.theme.textSizes['xxxl']};
   }
+    .ticket-price {
+      font-size: ${props => props.theme.textSizes['xxs']};
+      color: ${props => props.theme.colors['black-700']};
+    }
 }
 `;

@@ -30,6 +30,7 @@ export const defaultTheme = {
     m: '1rem', // 16px
     s: '0.875rem', // 14px
     xs: '0.75rem', // 12px
+    xxs: '.625rem', // 10px
   },
 
   fonts: {

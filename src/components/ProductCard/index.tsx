@@ -30,7 +30,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="product-price">
           <p className="price-off">R$-{product.discountPercentage}%</p>
           <h1>R${product.price},00</h1>
-          <p>Ou R${discountedPrice.toFixed(2)} com 10% off no boleto</p>
+          <p className="ticket-price">Ou R$ {discountedPrice.toFixed(2)} com 10% off no boleto</p>
         </div>
       </div>
     </Container>
