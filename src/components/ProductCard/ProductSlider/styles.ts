@@ -19,17 +19,17 @@ export const Container = styled.div`
 
 `
 export const FilteredSliderContainer = styled.div`
-  .title-container {
+  .section-title-container {
   border-top: solid 4px ${props => props.theme.colors['primary']};
   top: 25%;
   width: 64px;
 }
-  h1 {
+  .section-title {
   font-weight: bold;
   font-size: ${props => props.theme.textSizes['xxl']};
   margin-bottom: 42px;
 }
-  h1:first-letter {
+  .section-title:first-letter {
     text-transform: uppercase;
   }
 

@@ -73,8 +73,8 @@ export function FilteredSlider() {
     <>
       {categories.map((category) => (
         <FilteredSliderContainer>
-          <div className="title-container">
-            <h1>{category}</h1>
+          <div className="section-title-container">
+            <h1 className="section-title">{category}</h1>
           </div>
           <ProductSlider key={category} category={category} />
         </FilteredSliderContainer>
